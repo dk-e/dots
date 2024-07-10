@@ -1,0 +1,173 @@
+{
+  // vscode meta stuff
+  "workbench.startupEditor": "none",
+  "editor.accessibilitySupport": "off",
+
+  // text editing stuff
+  "editor.formatOnSave": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.linkedEditing": true,
+  "editor.inlineSuggest.enabled": true,
+  "editor.unicodeHighlight.nonBasicASCII": false,
+
+  // ui stuff
+  // font
+  "editor.fontFamily": "FiraCode Nerd Font",
+  // "apc.font.family": "FiraCode Nerd Font", // apply font to ALL the UI
+  "terminal.integrated.fontFamily": "CaskaydiaMono Nerd Font Mono", // terminal font
+  "terminal.integrated.cursorStyle": "line",
+  "editor.fontLigatures": false,
+
+  // cursor
+  "editor.cursorBlinking": "smooth", // cursor animation, looks nice
+  "editor.cursorSmoothCaretAnimation": "on", // move cursor smoothly
+
+  //     top bar
+  "breadcrumbs.enabled": true, // hides breadcrumb path at top of window
+  "workbench.layoutControl.enabled": false, // hides those little squares on the top right of the window
+
+  //     minimap
+  "editor.hideCursorInOverviewRuler": true, // don't highlight current line in scrollbar
+  "editor.minimap.autohide": true, // shows minimap only on hover
+
+  //     sidebar
+  "workbench.sideBar.location": "right", // puts sidebar on the right
+
+  //     editor
+  "editor.stickyScroll.enabled": true, // keep block name fixed at top when scrolling
+  "editor.wordWrap": "on", // wrap text instead of scrolling horizontally
+
+  //   Theme
+  "workbench.iconTheme": "bearded-icons",
+  "workbench.tree.indent": 12,
+  "workbench.colorTheme": "Moonlight II",
+  "workbench.productIconTheme": "fluent-icons",
+
+  // tabs
+  "editor.indentSize": "tabSize",
+  "editor.tabSize": 2,
+
+  // git stuff
+  "git.openRepositoryInParentFolders": "always",
+  "git.autofetch": true,
+  "git.confirmNoVerifyCommit": false,
+  "git.confirmSync": false,
+  "git.ignoreMissingGitWarning": true,
+  "gitlens.gitCommands.skipConfirmations": [
+    "fetch:command",
+    "stash-push:command",
+    "switch:command",
+    "push:command"
+  ],
+  "gitlens.hovers.currentLine.over": "line",
+  "git.enableSmartCommit": true,
+
+  // js tooling stuff
+  "typescript.preferences.importModuleSpecifier": "non-relative", // prefer aliases when importing
+  "eslint.options": {
+    "extensions": [".js", ".jsx", ".mdx", ".ts", ".tsx"]
+  },
+  "eslint.validate": [
+    "mdx",
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact"
+  ],
+  "tailwindCSS.experimental.classRegex": [
+    // enables tailwind autocomplete for specified functions
+    ["cva\\(([^)]*)\\)", "[\"'`]([^\"'`]*).*?[\"'`]"],
+    ["cn\\(([^)]*)\\)", "[\"'`]([^\"'`]*).*?[\"'`]"],
+    ["cx\\(([^)]*)\\)", "[\"'`]([^\"'`]*).*?[\"'`]"]
+  ],
+
+  // Code stats
+  "codestats.apikey": "SFMyNTY.WkdzPSMjTWpJNE5Eaz0.vx8DebzOLjgulaFP0iUVTVIQuRFghlS0FQkiQWAqFQk",
+  "codestats.apiurl": "https://codestats.net/api/",
+  "codestats.username": "dk",
+
+  // Telemetry
+  "telemetry.telemetryLevel": "off",
+
+  // Extensions
+  "dotenv.enableAutocloaking": true,
+
+  // Errors
+  "errorLens.enabled": true,
+  "errorLens.padding": "0",
+  "errorLens.gutterIconsEnabled": true,
+  "errorLens.removeLinebreaks": false,
+  "errorLens.scrollbarHackEnabled": true,
+  "errorLens.fontWeight": "600",
+  "errorLens.fontFamily": "FiraCode Nerd Font",
+  "workbench.editorAssociations": {
+    "*.lockb": "default"
+  },
+
+  // Custom labels
+  "workbench.editor.customLabels.patterns": {
+    "**/{layout,page}.tsx": "${dirname} ${filename}",
+    "**/{route}.ts": "${dirname} ${filename}",
+    "**/{*}.tsx": "${filename} component"
+  },
+
+  // Misc
+  "explorer.confirmDragAndDrop": false,
+  "explorer.confirmDelete": false,
+  "editor.guides.bracketPairs": true,
+  "editor.suggestSelection": "first",
+  "console-ninja.featureSet": "Community",
+  "window.openFoldersInNewWindow": "on",
+  "files.autoSave": "onWindowChange",
+
+  // Copilot
+  "github.copilot.enable": {
+    "*": true,
+    "plaintext": false,
+    "markdown": false,
+    "scminput": false
+  },
+  "github.copilot.editor.enableAutoCompletions": true,
+
+  // CodeSnap
+  "codesnap.realLineNumbers": true,
+
+  // Nice TS stuff
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "symbols.hidesExplorerArrows": false,
+  "files.associations": {
+    ".env*": "dotenv"
+  },
+  "editor.tokenColorCustomizations": {
+    "[*Light*]": {
+      "textMateRules": [
+        {
+          "scope": "ref.matchtext",
+          "settings": {
+            "foreground": "#000"
+          }
+        }
+      ]
+    },
+    "[*Dark*]": {
+      "textMateRules": [
+        {
+          "scope": "ref.matchtext",
+          "settings": {
+            "foreground": "#fff"
+          }
+        }
+      ]
+    },
+    "textMateRules": [
+      {
+        "scope": "keyword.other.dotenv",
+        "settings": {
+          "foreground": "#FF000000"
+        }
+      }
+    ]
+  },
+  "terminal.integrated.env.windows": {},
+  "editor.minimap.renderCharacters": false
+}
